@@ -2,7 +2,9 @@ class_name Sub extends Node2D
 
 static func create():
 	var scene := preload("res://Sub.tscn")
-	return scene.instantiate()
+	var i := scene.instantiate()
+	i.init()
+	return i
 
 func init():
 	pass
